@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-bg: #ff2626;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(255, 248, 240);
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: aqua; */
+}
+.upper-main-container {
+  background-color: red;
+  flex-basis: 35%;
+  height: 100%;
+  width: 100%;
+  padding: 2% 8%;
+}
+.lower-main-container {
+  flex-basis: 65%;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+.lower-main-container::-webkit-scrollbar {
+  display: none;
+}
+.boxes {
+  height: 300px;
+  width: 100%;
+  /* display:; */
+}
+
+/*  Responsive design css */
+
+@media only screen and (max-width: 420px) {
+  .upper-main-container {
+    background-color: var(--main-bg);
+    flex-basis: 30%;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+    padding: 7% 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .upper-sub-head {
+    font-size: 1.5em;
+  }
+  .heading {
+    font-size: 2.4em;
+  }
+  .lower-sub-head {
+    font-size: 1.1em;
+  }
+
+ .lower-main-container {
+  flex-basis: 68%;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  flex-direction: column;
+ }
+.lower-main-container::-webkit-scrollbar {
+  display: none;
+}
+.boxes {
+  height: 230px;
+  width: 100%;
+  /* display:; */
+  margin-bottom: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 90%;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 1em;
+    box-shadow: .7px .7px 6px rgba(0, 0, 0, 0.219); 
+    /* display: flex; */
+    padding: 1em;
+  
+}
+.card-label{
+    font-size: 1.7em;
+    margin-bottom: 3%;
+}
+.card-info{
+    font-size: 1em;
+    margin-bottom:3% ;
+
+}
+
+
+.button{
+    height: 40px;
+    width: 100%;
+    background-color: red;
+    border-radius: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2em;
+
+}
+}
